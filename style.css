@@ -1,0 +1,129 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  border: 0px none;
+  border-radius: 5px;
+  width: 40%;
+  display: flex;
+}
+
+p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  line-height: 20px;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 3px;
+  margin: 15px 0px;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-size: 36px;
+  margin: 0px;
+  line-height: 35px;
+}
+
+button {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #3d8168;
+  padding: 15px;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  border: none 0px;
+}
+
+button:hover {
+  background-color: #1a4031;
+}
+
+img {
+  width: 50%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#description {
+  background-color: hsl(0, 0%, 100%);
+  width: 50%;
+  border-radius: 0px 10px 10px 0px;
+  padding: 20px 30px;
+}
+
+#price {
+  font-family: "Fraunces", serif;
+  margin: 35px 0px 20px 0px;
+  display: flex;
+}
+
+#discount {
+  font-size: 30px;
+  color: #3d8168;
+}
+
+#real-price {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  margin: auto;
+  font-weight: 100;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    min-height: 0px;
+  }
+  main {
+    margin: 20px 10px 20px 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+  }
+  img {
+    content: url(./images/image-product-mobile.jpg);
+    width: 100%;
+    object-fit: cover;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px 10px 0px 0px;
+    display: block;
+  }
+  #description {
+    width: 100%;
+    margin: 0px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px 23px;
+    box-sizing: border-box;
+  }
+  h2 {
+    font-size: 32px;
+  }
+}
